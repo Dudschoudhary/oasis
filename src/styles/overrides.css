@@ -1,0 +1,25 @@
+.ant-menu-overflow-item-rest {
+    background-color: transparent !important;
+}
+.ant-menu-dark .ant-menu-submenu-selected .ant-menu-submenu-title,
+.ant-menu-light .ant-menu-submenu-selected .ant-menu-submenu-title {
+    color: white !important;
+}
+.css-dev-only-do-not-override-nqoqt9.ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+    border-radius: 10px 0 10px 0;
+}
+.ant-drawer .ant-drawer-close {
+    color: #fff;
+}
+.ant-drawer .ant-drawer-close:hover {
+    background-color: white;
+}
+.ant-drawer .ant-drawer-header {
+    border-bottom: 1px solid #bebbbb;
+}
+/* .ant-menu-submenu-selected{
+    background-color: red;
+}
+.ant-menu .ant-menu-item-selected{
+    background-color: green;
+} */
