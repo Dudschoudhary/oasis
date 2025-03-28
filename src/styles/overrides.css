@@ -17,9 +17,26 @@
 .ant-drawer .ant-drawer-header {
     border-bottom: 1px solid #bebbbb;
 }
-/* .ant-menu-submenu-selected{
-    background-color: red;
+.ant-menu-dark{
+    background-color: none;
 }
-.ant-menu .ant-menu-item-selected{
-    background-color: green;
-} */
+.ant-menu-dark .ant-menu-item a, .ant-menu-title-content{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.ant-menu-dark.ant-menu-horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ant-menu-dark.ant-menu{
+    background:none;
+}
+.ant-menu-dark.ant-menu .ant-menu-item-selected, .ant-menu-dark.ant-menu .ant-menu-item-selected:hover{
+    background-color:#00434c;
+    color: #fff;
+}

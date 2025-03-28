@@ -3,7 +3,6 @@ import { Drawer, Menu } from 'antd';
 import { FiLayers } from 'react-icons/fi';
 import { CiMenuBurger } from 'react-icons/ci';
 import { MdOutlineClose, MdOutlineDashboardCustomize } from 'react-icons/md';
-// import logo from "../../assets/images/logo.jpg";
 import { AiOutlineLogout } from 'react-icons/ai';
 import { TbArrowsExchange, TbReportSearch } from 'react-icons/tb';
 import { FaRegUser } from 'react-icons/fa';
@@ -18,7 +17,14 @@ const Navigation = () => {
   const closeDrawer = () => setDrawerVisible(false);
 
   const handleMenuClick = () => setDrawerVisible(false);
-  const handleOpenChange = (keys) => setOpenKeys(keys.length > 0 ? [keys[keys.length - 1]] : []);
+  const handleOpenChange = (keys) => {
+    if (keys.length > 0) {
+      const latestOpenKey = keys[keys.length - 1];
+      setOpenKeys([latestOpenKey]);
+    } else {
+      setOpenKeys([]);
+    }
+  };
 
   const userMenu = [
     {
@@ -35,52 +41,47 @@ const Navigation = () => {
   const menuItems = [
     { label: <Link to={"/"}>Home</Link>, key: 'home' },
     {
-      label: 'About', icon: <FiLayers />, key: 'about',
+      label: 'About', key: 'about',
       children: [
         { label: <Link to={"/about-school"}>About School</Link>, key: 'aboutSchool' },
         { label: <Link to={"/directors-message"}>Director’s Message</Link>, key: 'directorsMessage' },
         { label: <Link to={"/achievements"}>Achievements</Link>, key: 'achievements' },
         { label: <Link to={"/special_achievements"}>Special Achievements</Link>, key: 'specialAchievements' },
         { label: <Link to={"/news_media"}>News & Media</Link>, key: 'news_Media' },
-        { label: <Link to={"/alumni_registration"}>Alumni Registration</Link>, key: 'alumniRegistration'},
-        { label: <Link to={"/careers"}>Careers</Link>, key: 'careers'},
-        { label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads'},
-        {label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads',
-            children: [
-              { label: <Link to={"/admission-form"}>Admission Form</Link>, key: 'admissionForm' }  // Admission Form under Downloads
-            ]
+        { label: <Link to={"/alumni_registration"}>Alumni Registration</Link>, key: 'alumniRegistration' },
+        { label: <Link to={"/careers"}>Careers</Link>, key: 'careers' },
+        // { label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads' },
+        {
+          label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads',
+          children: [
+            { label: <Link to={"/admission-form"}>Admission Form</Link>, key: 'admissionForm' }  // Admission Form under Downloads
+          ]
         },
       ]
     },
     {
-      label: 'Report', icon: <TbReportSearch />, key: 'reports',
+      label: 'Academic', key: 'Academic',
       children: [
-        { label: 'Task List Report', key: 'taskListReport' },
-        { label: 'Opportunity Overview', key: 'opportunityOverview' },
-        { label: 'Enquiry Overview', key: 'enquiryOverview' },
-        { label: 'Opportunity Stages', key: 'opportunityStages' },
-        { label: 'Enquiry Stages', key: 'enquiryStages' },
+        { label: 'Admissions', key: 'Addmissions', 
+          children: [
+            { label: 'Greetings from Mayur', key: 'greetingsFromMayur' },
+            { label: 'Admission Procedure', key: 'admissionProcedure' },
+            { label: 'Online Registration', key: 'onlineRegistration' },
+          ]
+        },
+        { label: 'Fee Structure', key: 'feeStructure' },
+        { label: 'Uniform', key: 'uniform' },
+        { label: 'Affiliation', key: 'affiliation' },
+        { label: 'School Rules', key: 'schoolRules' },
+        { label: 'Sports / Activities', key: 'aportsActivities' },
       ]
     },
-    { label: <Link to={"/task-list"}>Task List</Link>, icon: <GoTasklist />, key: 'taskList' },
+    { label: <Link to={"/task-list"}>Task List</Link>, key: 'taskList' },
     {
-      label: 'Master', icon: <FiLayers />, key: 'master',
+      label: 'Master', key: 'master',
       children: [
         { label: <Link to={"/master/client"}>Client</Link>, key: 'client' },
         { label: <Link to={"/master/offerStatus"}>Offer Status</Link>, key: 'offerStatus' },
-        { label: <Link to={"/master/orderStatus"}>Order Status</Link>, key: 'orderStatus' },
-        { label: <Link to={"/master/enduser"}>End User</Link>, key: 'enduser' },
-        { label: <Link to={"/master/sector"}>Sector</Link>, key: 'sector' },
-        { label: <Link to={"/master/expectedOrder"}>Expected Order</Link>, key: 'expectedOrder' },
-        { label: <Link to={"/master/plant"}>Plant</Link>, key: 'plant' },
-        { label: <Link to={"/master/enquiryTypes"}>Enquiry Type</Link>, key: 'enquiryTypes' },
-        { label: <Link to={"/master/vendor"}>Vendor</Link>, key: 'vendor' },
-        { label: <Link to={"/master/pricing"}>Pricing</Link>, key: 'pricing' },
-        { label: <Link to={"/master/currency"}>Currency</Link>, key: 'currency' },
-        { label: <Link to={"/master/equipmentWork"}>Equipment/Work</Link>, key: 'equipmentWork' },
-        { label: <Link to={"/master/stage"}>Stage</Link>, key: 'stage' },
-        { label: <Link to={"/master/category"}>Category</Link>, key: 'category' },
-        { label: <Link to={"/master/substages"}>Substages</Link>, key: 'substages' }
       ]
     }
   ];
@@ -88,20 +89,20 @@ const Navigation = () => {
   return (
     <>
       <nav className="border-gray-200 sticky top-0 z-50">
-        <div className="bg-[#494f5d]">
-          <div className="flex items-center justify-between bg-none hover:normal-nums">
-            <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-              {/* <img src={logo} className="h-8 m-2" alt="Logo" /> */}
+        <div className="bg-[#00434c] py-5 ">
+          <div className="flex items-center justify-around text-5xl">
+            <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse w-20">
+              <h2 className='text-white px-10'>Oasis</h2>
             </a>
 
             <div className="flex items-center space-x-2 md:order-2">
-              <Menu
+              {/* <Menu
                 mode="horizontal"
                 theme="dark"
                 onClick={handleMenuClick}
                 items={userMenu}
                 className="flex-wrap bg-[#494f5d] hover:text-white"
-              />
+              /> */}
               <button
                 onClick={showDrawer}
                 type="button"
@@ -116,17 +117,19 @@ const Navigation = () => {
                 )}
               </button>
             </div>
-
             <Menu
               mode="horizontal"
               theme="dark"
               onClick={handleMenuClick}
               items={menuItems}
-              className="hidden md:flex flex-wrap bg-[#494f5d] hover:text-white"
+              style={{ minWidth: 0, flex: "auto" }}
+              className="md:!flex !hidden bg-[#494f5d] hover:text-white text-5xl"
             />
+
           </div>
         </div>
 
+        {/* Drawer for mobile menu */}
         <Drawer
           placement="left"
           onClose={closeDrawer}
@@ -138,11 +141,7 @@ const Navigation = () => {
           }}
           title={
             <div className="flex justify-end items-center">
-              <img
-                // src={logo}
-                alt="Logo"
-                className="h-8"
-              />
+              <img alt="Logo" className="h-8" />
             </div>
           }
         >
