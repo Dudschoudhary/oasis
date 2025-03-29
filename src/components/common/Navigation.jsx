@@ -52,9 +52,9 @@ const Navigation = () => {
         { label: <Link to={"/careers"}>Careers</Link>, key: 'careers' },
         // { label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads' },
         {
-          label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads',
+          label: 'Downloads', key: 'downloads',
           children: [
-            { label: <Link to={"/admission-form"}>Admission Form</Link>, key: 'admissionForm' }  // Admission Form under Downloads
+            { label: 'Online Registration', key: 'onlineRegistration' },  // Admission Form under Downloads
           ]
         },
       ]
@@ -90,9 +90,9 @@ const Navigation = () => {
     <>
       <nav className="border-gray-200 sticky top-0 z-50">
         <div className="bg-[#00434c] py-5 ">
-          <div className="flex items-center justify-around text-5xl">
+          <div className="flex items-center justify-around text-xl lg:text-5xl">
             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse w-20">
-              <h2 className='text-white px-10'>Oasis</h2>
+              <h2 className='text-white px-10'>Duds</h2>
             </a>
 
             <div className="flex items-center space-x-2 md:order-2">
@@ -136,8 +136,8 @@ const Navigation = () => {
           open={drawerVisible}
           width={250}
           classNames={{
-            body: "bg-[#001529]",
-            header: "bg-[#001529]",
+            body: "bg-[#00434c]",
+            header: "bg-[#00434c]",
           }}
           title={
             <div className="flex justify-end items-center">

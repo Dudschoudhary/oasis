@@ -1,8 +1,11 @@
 import React from 'react'
+import SliderBar from './SliderBar'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <SliderBar/>
+    </>
   )
 }
 

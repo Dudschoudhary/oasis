@@ -23,7 +23,6 @@
 .ant-menu-dark .ant-menu-item a, .ant-menu-title-content{
     color: #fff;
     font-size: 16px;
-    text-transform: uppercase;
 }
 
 .ant-menu-dark.ant-menu-horizontal{
@@ -39,4 +38,7 @@
 .ant-menu-dark.ant-menu .ant-menu-item-selected, .ant-menu-dark.ant-menu .ant-menu-item-selected:hover{
     background-color:#00434c;
     color: #fff;
+}
+.ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline{
+    background-color:#00434c;  /* pending */
 }
