@@ -76,14 +76,19 @@ const Navigation = () => {
         { label: 'Sports / Activities', key: 'aportsActivities' },
       ]
     },
-    { label: <Link to={"/task-list"}>Task List</Link>, key: 'taskList' },
     {
-      label: 'Master', key: 'master',
+      label: 'Infrastructure', key: 'infrastructure',
       children: [
-        { label: <Link to={"/master/client"}>Client</Link>, key: 'client' },
-        { label: <Link to={"/master/offerStatus"}>Offer Status</Link>, key: 'offerStatus' },
+        { label: <Link to={"/laboratories"}>Laboratories</Link>, key: 'laboratories' },
+        { label: <Link to={"/digitalClassRooms"}>Digital Class Rooms </Link>, key: 'digitalClassRooms' },
+        { label: <Link to={"/library"}>Library </Link>, key: 'library' },
+        { label: <Link to={"/transportation"}>Transportation </Link>, key: 'transportation' },
+        { label: <Link to={"/facilities"}>Facilities </Link>, key: 'facilities' },
       ]
-    }
+    },
+    { label: <Link to={"/results"}>Results</Link>, key: 'results' },
+    { label: <Link to={"/events"}>Events</Link>, key: 'events' }, 
+    { label: <Link to={"/contactUs"}>Contact Us</Link>, key: 'contactUs' }, 
   ];
 
   return (
