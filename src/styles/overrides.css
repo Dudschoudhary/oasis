@@ -23,7 +23,17 @@
 .ant-menu-dark .ant-menu-item a, .ant-menu-title-content{
     color: #fff;
     font-size: 16px;
+    padding-right: 10px;
+
 }
+/* .ant-menu-item, .ant-menu-title-content{
+    border-right: 1px solid red;
+
+} */
+
+.ant-menu-item a, .ant-menu-title-content:hover{
+    color: #d7b56d;
+} 
 
 .ant-menu-dark.ant-menu-horizontal{
     display: flex;

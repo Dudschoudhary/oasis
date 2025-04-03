@@ -8,6 +8,7 @@ import { TbArrowsExchange, TbReportSearch } from 'react-icons/tb';
 import { FaRegUser } from 'react-icons/fa';
 import { GoTasklist } from 'react-icons/go';
 import { Link } from 'react-router-dom';
+import logoImage from '../../../src/assets/images/oasis2.png'
 
 const Navigation = () => {
   const [drawerVisible, setDrawerVisible] = useState(false);
@@ -39,9 +40,9 @@ const Navigation = () => {
   ];
 
   const menuItems = [
-    { label: <Link to={"/"}>Home</Link>, key: 'home' },
+    { label: <Link to={"/"}>HOME</Link>, key: 'home' },
     {
-      label: 'About', key: 'about',
+      label: 'ABOUT', key: 'about',
       children: [
         { label: <Link to={"/about-school"}>About School</Link>, key: 'aboutSchool' },
         { label: <Link to={"/directors-message"}>Director’s Message</Link>, key: 'directorsMessage' },
@@ -60,7 +61,7 @@ const Navigation = () => {
       ]
     },
     {
-      label: 'Academic', key: 'Academic',
+      label: 'ACADEMIC', key: 'Academic',
       children: [
         { label: 'Admissions', key: 'Addmissions', 
           children: [
@@ -77,7 +78,7 @@ const Navigation = () => {
       ]
     },
     {
-      label: 'Infrastructure', key: 'infrastructure',
+      label: 'INFRASTRUCTURE', key: 'infrastructure',
       children: [
         { label: <Link to={"/laboratories"}>Laboratories</Link>, key: 'laboratories' },
         { label: <Link to={"/digitalClassRooms"}>Digital Class Rooms </Link>, key: 'digitalClassRooms' },
@@ -86,18 +87,20 @@ const Navigation = () => {
         { label: <Link to={"/facilities"}>Facilities </Link>, key: 'facilities' },
       ]
     },
-    { label: <Link to={"/results"}>Results</Link>, key: 'results' },
-    { label: <Link to={"/events"}>Events</Link>, key: 'events' }, 
-    { label: <Link to={"/contactUs"}>Contact Us</Link>, key: 'contactUs' }, 
+    { label: <Link to={"/results"}>RESULTS</Link>, key: 'results' },
+    { label: <Link to={"/events"}>EVENTS</Link>, key: 'events' }, 
+    { label: <Link to={"/contactUs"}>CONTACT US</Link>, key: 'contactUs' }, 
   ];
 
   return (
     <>
-      <nav className="border-gray-200 sticky top-0 z-50">
+      <nav className="border-gray-200 sticky top-0 z-50 Roboto-Bold">
         <div className="bg-[#00434c] py-5 ">
-          <div className="flex items-center justify-around text-xl lg:text-5xl">
+          <div className="flex items-center justify-between lg:justify-around text-xl lg:text-5xl">
             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse w-20">
-              <h2 className='text-white px-10'>Duds</h2>
+              {/* <h2 className='text-white '>Duds</h2> */}
+              <img src={logoImage} alt="Oasis Logo"  className='ms-10'/>
+              
             </a>
 
             <div className="flex items-center space-x-2 md:order-2">
@@ -111,7 +114,7 @@ const Navigation = () => {
               <button
                 onClick={showDrawer}
                 type="button"
-                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden"
+                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden me-10"
                 aria-controls="navbar-user"
                 aria-expanded={drawerVisible ? 'true' : 'false'}
               >
@@ -128,7 +131,7 @@ const Navigation = () => {
               onClick={handleMenuClick}
               items={menuItems}
               style={{ minWidth: 0, flex: "auto" }}
-              className="md:!flex !hidden bg-[#494f5d] hover:text-white text-5xl"
+              className="md:!flex !hidden bg-[#494f5d] hover:text-white Roboto-Bold"
             />
 
           </div>
@@ -146,7 +149,7 @@ const Navigation = () => {
           }}
           title={
             <div className="flex justify-end items-center">
-              <img alt="Logo" className="h-8" />
+              <img src={logoImage} alt="Logo" className="h-8" />
             </div>
           }
         >

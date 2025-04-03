@@ -1,0 +1,32 @@
+@font-face {
+    font-family:"Roboto-Italic-VariableFont_wdth";
+    src: url(../../src/assets/font/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../../src/assets/font/Roboto/static/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family:"Roboto-Light";
+    src: url(../../src/assets/font/Roboto/static/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto_Condensed-SemiBold";
+    src: url(../../src/assets/font/Roboto/static/Roboto_Condensed-SemiBold.ttf);
+}
+
+.Roboto-Black{
+    font-family:"Roboto-Italic-VariableFont_wdth";
+}
+.Roboto-Bold{
+    font-family: "Roboto-Bold";
+}
+.Roboto-Light{
+    font-family:"Roboto-Light";
+}
+.Roboto_Condensed_SemiBold{
+    font-family: "Roboto_Condensed-SemiBold";
+}

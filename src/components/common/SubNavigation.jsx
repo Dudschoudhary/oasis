@@ -8,17 +8,17 @@ const SubNavigation = () => {
       <div className=' flex justify-around items-center text-[#00434c]'>
         
         {/* Left side contact information */}
-        <div className='flex justify-center flex-wrap gap-x-10 '>
+        <div className='flex justify-center flex-wrap gap-x-10 Roboto_Condensed_SemiBold'>
           {/* Phone number - visible on lg and above screens */}
           <div className='flex justify-center items-center gap-x-2'>
             <FaPhone />
-            <p>9587449072</p>
+            <p>9929298644</p>
           </div>
           
           {/* Email */}
           <div className='hidden lg:flex justify-center items-center gap-x-1'>
             <MdEmail />
-            <p>dudaram656@gmail.com</p>
+            <p>oasisstar@gmail.edu</p>
           </div>
           
           {/* Working hours */}
@@ -29,9 +29,9 @@ const SubNavigation = () => {
         </div>
 
         {/* Social media icons */}
-        <div className='hidden md:flex justify-center items-center gap-x-1 '>
-          <FaFacebookF />
-          <FaYoutube />
+        <div className='hidden md:flex justify-center items-center gap-x-2 '>
+          <FaFacebookF className='bg-[#00434c] text-white p-1 text-[22px] rounded'/>
+          <FaYoutube className='bg-[#00434c] text-white p-1 text-[22px] rounded'/>
         </div>
       </div>
     </div>
