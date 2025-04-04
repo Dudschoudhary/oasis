@@ -12,7 +12,7 @@ const Footer = () => {
             <img src={logoImage} alt="Oasis Logo" className='w-60' />
           </ul>
           <ul className='pt-7 sm:pt-0'>
-            <li className='font-bold'>OFFICE & ADMISSION</li>
+            <li className='font-bold'data-aos="flip-right">OFFICE & ADMISSION</li>
             <li className='py-3.5 pe-10'><hr className='text-white' /></li>
             <li className='flex'><FaPhoneAlt /><span className='Roboto-Light ps-2 pr-1'> 9929298644 </span> (Rupkishor Nehra)</li>
             <li className='flex'><FaPhoneAlt /><span className='Roboto-Light ps-2 pr-1'>8905516577 </span>(Jay Nehra)</li>
@@ -32,7 +32,7 @@ const Footer = () => {
             <li className='flex justify-start items-center'><MdEmail /><span className='Roboto-Light ps-2 pr-1'>oasisstar@yahoo.edu </span></li>
           </ul>
         </div>
-        <div className='bg-[#00434c] h-[60px] w-full grid grid-cols-1 sm:grid-cols-2 justify-around items-center text-white text-[14px]'>
+        <div className='bg-[#00434c] h-[60px] w-full flex flex-col md:flex-row justify-around items-center text-white text-[14px]'>
           <div className='ms-10 sm:ms-5'>Copyright © 2025 Oasis Start Academy</div>
           <div className='ms-10 sm:ms-5'>Website By: DudsTech</div>
         </div>

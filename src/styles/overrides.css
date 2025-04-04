@@ -52,3 +52,6 @@
 .ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline{
     background-color:#00434c;  /* pending */
 }
+.ant-table-cell{
+    text-align: center !important;
+}
