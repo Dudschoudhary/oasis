@@ -9,19 +9,19 @@ const columns = [
     dataIndex: 'class',
     key: 'class',
     render: text => <a>{text}</a>,
-    responsive: ['xs', 'sm', 'md'], // Make column visible on these breakpoints
+    responsive: ['xs', 'sm', 'md'], 
   },
   {
     title: 'Installment',
     dataIndex: 'installment',
     key: 'installment',
-    responsive: ['xs', 'sm', 'md'], // This column will only be visible on sm and md screens
+    responsive: ['xs', 'sm', 'md'],
   },
   {
     title: 'Tie & Belt',
     dataIndex: 'tieBelt',
     key: 'tieBelt',
-    responsive: ['xs', 'sm', 'md'], // Visible only on small screens and above
+    responsive: ['xs', 'sm', 'md'],
   },
   {
     title: 'Total (Per Annum)',
@@ -29,7 +29,7 @@ const columns = [
     dataIndex: 'totalPerAnnum',
     render: (_, { totalPerAnnum }) => (
       <>
-        <Tag color="green">{totalPerAnnum}</Tag> {/* Example of displaying totalPerAnnum in a tag */}
+        <Tag color="green">{totalPerAnnum}</Tag>
       </>
     ),
     responsive: ['xs', 'sm', 'md'],
@@ -38,25 +38,39 @@ const columns = [
 
 const data = [
   {
-    key: '1',
-    class: 'Class 1',
+    key: 'lkgUkg',
+    class: 'L.K.G./ U.K.G.',
     installment: '-',
-    tieBelt: 'Included',
-    totalPerAnnum: '₹30,000',
+    tieBelt: '₹100',
+    totalPerAnnum: '-',
   },
   {
-    key: '2',
-    class: 'Class 2',
-    installment: '4 Installments',
-    tieBelt: 'Not Included',
-    totalPerAnnum: '₹40,000',
+    key: 'firsttoThird',
+    class: 'I to III',
+    installment: '-',
+    tieBelt: '₹100',
+    totalPerAnnum: '-',
   },
   {
-    key: '3',
-    class: 'Class 3',
-    installment: '5 Installments',
-    tieBelt: 'Included',
-    totalPerAnnum: '₹50,000',
+    key: 'forthToSifth',
+    class: 'IV to V',
+    installment: '-',
+    tieBelt: '₹100',
+    totalPerAnnum: '-',
+  },
+  {
+    key: 'sixthToEight',
+    class: 'VI to VIII',
+    installment: '-',
+    tieBelt: '₹100',
+    totalPerAnnum: '-',
+  },
+  {
+    key: 'ninethToTenth',
+    class: 'IX to X',
+    installment: '-',
+    tieBelt: '₹100',
+    totalPerAnnum: '-',
   },
 ];
 
@@ -69,11 +83,10 @@ const FeeStructure = () => {
       <div className='container m-auto p-4'>
         <CommonButton title="Fee Structure 2025-26" className="text-xl md:text-3xl mb-10 Roboto-Bold" justify="center" />
         
-        {/* Add responsive and scroll prop to the Table component */}
         <Table 
           columns={columns} 
           dataSource={data} 
-          scroll={{ x: 'max-content' }} // Ensures horizontal scrolling when necessary
+          scroll={{ x: 'max-content' }}
           bordered
           responsive 
           style={{display:Flex, justifyContent:'center', alignItems:'center'}}
