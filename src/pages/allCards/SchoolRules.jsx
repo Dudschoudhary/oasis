@@ -13,8 +13,8 @@ const SchoolRules = () => {
                     <div className='md:w-[30%] flex justify-center items-center'>
                         <img src={schoolRules} alt="Schhol Rules"  className='w-[200px] md:w-full'/>
                     </div>
-                    <div className='md:w-[65%] px-10 '>
-                        <ol className='list-decimal px-10'>
+                    <div className='md:w-[65%] px-2 lg:px-10 '>
+                        <ol className='list-decimal px-2 md:px-10'>
                             <li className='ps-2'>We have strict discipline within the school premises.</li>
                             <li className='ps-2'>We don’t allow any student to insult the teachers. Strict action will be taken.</li>
                             <li className='ps-2'>Visitors will not be permitted to meet the students without permission from their parents/guardians.</li>

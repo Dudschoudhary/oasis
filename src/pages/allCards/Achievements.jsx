@@ -62,7 +62,7 @@ const Achievements = () => {
         <>
             <div>
                 <div>
-                    <CommonCardHeadingSection title="Fee Structure" />
+                    <CommonCardHeadingSection title="Achievements" />
                 </div>
                 <div className='container m-auto p-4'>
                     <CommonButton title="NEET" className="text-xl md:text-3xl mb-10 Roboto-Bold px-4" justify="start" />

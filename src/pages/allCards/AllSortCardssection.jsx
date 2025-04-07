@@ -19,25 +19,25 @@ const AllSortCardssection = () => {
                     </Link>
 
                     <Link to={"fee-structure"}>
-                        <img src={feeStructure} alt="" />
+                        <img src={feeStructure} alt="Fee Structure Image" />
                     </Link>
-                    <Link to={"result"}>
-                        <img src={results} alt="" />
+                    <Link to={"results"}>
+                        <img src={results} alt="Result Image" />
                     </Link>
                     <Link to={"school-rules"}>
-                        <img src={schoolRules} alt="" />
+                        <img src={schoolRules} alt="School Rules Image" />
                     </Link>
                     <Link to={"events"}>
-                        <img src={events} alt="" />
+                        <img src={events} alt="Enents Image" />
                     </Link>
                     <Link to={"news-media"}>
-                        <img src={newsAndMedia} alt="" />
+                        <img src={newsAndMedia} alt="News & Media Image" />
                     </Link>
                     <Link to='achievements'>
-                        <img src={achievements} alt="" />
+                        <img src={achievements} alt="Achievements Image" />
                     </Link>
-                    <Link>
-                        <img src={alumni} alt="" />
+                    <Link to='alumni'>
+                        <img src={alumni} alt="Alumni Image" />
                     </Link>
                 </div>
             </div>

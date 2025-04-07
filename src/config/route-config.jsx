@@ -9,6 +9,9 @@ import SchoolRules from "../pages/allCards/SchoolRules";
 import Events from "../pages/allCards/Events";
 import NewsMedia from "../pages/allCards/NewsMedia";
 import Achievements from "../pages/allCards/Achievements";
+import Alumni from "../pages/allCards/Alumni";
+import Careers from "../pages/allCards/Careers";
+import AboutSchool from "../pages/about/AboutSchool";
 
 export const route = createBrowserRouter([
   {
@@ -29,7 +32,7 @@ export const route = createBrowserRouter([
           element: <FeeStructure/>
         },
         {
-          path: "/result",
+          path: "/results",
           element: <Result/>
         },
         {
@@ -47,6 +50,18 @@ export const route = createBrowserRouter([
         {
           path: "achievements",
           element: <Achievements/>
+        },
+        {
+          path: "alumni",
+          element: <Alumni/>
+        },
+        {
+          path: "careers",
+          element: <Careers/>
+        },
+        {
+          path: "about-school",
+          element: <AboutSchool/>
         },
     ]
   }

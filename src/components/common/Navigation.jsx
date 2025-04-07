@@ -47,9 +47,8 @@ const Navigation = () => {
         { label: <Link to={"/about-school"}>About School</Link>, key: 'aboutSchool' },
         { label: <Link to={"/directors-message"}>Director’s Message</Link>, key: 'directorsMessage' },
         { label: <Link to={"/achievements"}>Achievements</Link>, key: 'achievements' },
-        { label: <Link to={"/special_achievements"}>Special Achievements</Link>, key: 'specialAchievements' },
-        { label: <Link to={"/news_media"}>News & Media</Link>, key: 'news_Media' },
-        { label: <Link to={"/alumni_registration"}>Alumni Registration</Link>, key: 'alumniRegistration' },
+        { label: <Link to={"/news-media"}>News & Media</Link>, key: 'news_Media' },
+        { label: <Link to={"/alumni"}>Alumni Registration</Link>, key: 'alumniRegistration' },
         { label: <Link to={"/careers"}>Careers</Link>, key: 'careers' },
         // { label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads' },
         {
@@ -80,9 +79,9 @@ const Navigation = () => {
     {
       label: 'INFRASTRUCTURE', key: 'infrastructure',
       children: [
-        { label: <Link to={"/laboratories"}>Laboratories</Link>, key: 'laboratories' },
+        // { label: <Link to={"/laboratories"}>Laboratories</Link>, key: 'laboratories' },
         { label: <Link to={"/digitalClassRooms"}>Digital Class Rooms </Link>, key: 'digitalClassRooms' },
-        { label: <Link to={"/library"}>Library </Link>, key: 'library' },
+        // { label: <Link to={"/library"}>Library </Link>, key: 'library' },
         { label: <Link to={"/transportation"}>Transportation </Link>, key: 'transportation' },
         { label: <Link to={"/facilities"}>Facilities </Link>, key: 'facilities' },
       ]
