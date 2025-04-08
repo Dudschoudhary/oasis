@@ -59,3 +59,6 @@
     background-color: #00434c;
     padding: 20px 20px;
 }
+.ant-menu-dark.ant-menu-horizontal .ant-menu-submenu-selected, .ant-menu-dark.ant-menu-horizontal .ant-menu-submenu-selected:hover{
+    background-color: #00434c;
+}

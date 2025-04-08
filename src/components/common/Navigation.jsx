@@ -44,11 +44,11 @@ const Navigation = () => {
     {
       label: 'ABOUT', key: 'about',
       children: [
-        { label: <Link to={"/about-school"}>About School</Link>, key: 'aboutSchool' },
-        { label: <Link to={"/directors-message"}>Director’s Message</Link>, key: 'directorsMessage' },
+        { label: <Link to={"/about-school"}>About School</Link>, key: 'aboutSchool'},
+        { label: <Link to={"/director-message"}>Director's Message</Link>, key: 'directorsMessage'},
         { label: <Link to={"/achievements"}>Achievements</Link>, key: 'achievements' },
         { label: <Link to={"/news-media"}>News & Media</Link>, key: 'news_Media' },
-        { label: <Link to={"/alumni"}>Alumni Registration</Link>, key: 'alumniRegistration' },
+        { label: <Link to={"/alumni"}>Alumni Registration</Link>, key: 'alumniRegistration'},
         { label: <Link to={"/careers"}>Careers</Link>, key: 'careers' },
         // { label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads' },
         {

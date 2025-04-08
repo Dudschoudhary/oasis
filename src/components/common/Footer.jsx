@@ -12,7 +12,7 @@ const Footer = () => {
             <img src={logoImage} alt="Oasis Logo" className='w-60' />
           </ul>
           <ul className='pt-7 sm:pt-0'>
-            <li className='font-bold'data-aos="flip-right">OFFICE & ADMISSION</li>
+            <li className='font-bold'>OFFICE & ADMISSION</li>
             <li className='py-3.5 pe-10'><hr className='text-white' /></li>
             <li className='flex'><FaPhoneAlt /><span className='Roboto-Light ps-2 pr-1'> 9929298644 </span> (Rupkishor Nehra)</li>
             <li className='flex'><FaPhoneAlt /><span className='Roboto-Light ps-2 pr-1'>8905516577 </span>(Jay Nehra)</li>

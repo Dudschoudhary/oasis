@@ -12,6 +12,7 @@ import Achievements from "../pages/allCards/Achievements";
 import Alumni from "../pages/allCards/Alumni";
 import Careers from "../pages/allCards/Careers";
 import AboutSchool from "../pages/about/AboutSchool";
+import DirectorMessage from "../pages/about/DirectorMessage";
 
 export const route = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ export const route = createBrowserRouter([
         {
           path: "about-school",
           element: <AboutSchool/>
+        },
+        {
+          path: "director-message",
+          element: <DirectorMessage/>
         },
     ]
   }
