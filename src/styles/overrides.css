@@ -53,7 +53,7 @@
     background-color:#00434c;  /* pending */
 }
 .ant-table-cell{
-    text-align: center !important;
+    /* text-align: center !important; */
 }
 .ant-btn-variant-solid{
     background-color: #00434c;

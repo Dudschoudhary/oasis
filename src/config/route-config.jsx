@@ -14,6 +14,10 @@ import Careers from "../pages/allCards/Careers";
 import AboutSchool from "../pages/about/AboutSchool";
 import DirectorMessage from "../pages/about/DirectorMessage";
 import ContactUs from "../pages/ContactUs";
+import Transportation from "../pages/Transportation";
+import Facilities from "../pages/Facilities";
+import Affiliation from "../pages/Affiliation";
+import Sports from "../pages/about/Sports";
 
 export const route = createBrowserRouter([
   {
@@ -72,6 +76,22 @@ export const route = createBrowserRouter([
         {
           path: "contact-us",
           element: <ContactUs/>
+        },
+        {
+          path: "transportation",
+          element: <Transportation/>
+        },
+        {
+          path: "facilities",
+          element: <Facilities/>
+        },
+        {
+          path: "affiliation",
+          element: <Affiliation/>
+        },
+        {
+          path: "sports-activities",
+          element: <Sports/>
         },
     ]
   }

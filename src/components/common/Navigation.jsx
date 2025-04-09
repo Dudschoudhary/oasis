@@ -51,37 +51,35 @@ const Navigation = () => {
         { label: <Link to={"/alumni"}>Alumni Registration</Link>, key: 'alumniRegistration'},
         { label: <Link to={"/careers"}>Careers</Link>, key: 'careers' },
         // { label: <Link to={"/downloads"}>Downloads</Link>, key: 'downloads' },
-        {
-          label: 'Downloads', key: 'downloads',
-          children: [
-            { label: 'Online Registration', key: 'onlineRegistration' },  // Admission Form under Downloads
-          ]
-        },
+        // {
+        //   label: 'Downloads', key: 'downloads',
+        //   children: [
+        //     { label: 'Online Registration', key: 'onlineRegistration' },  // Admission Form under Downloads
+        //   ]
+        // },
       ]
     },
     {
       label: 'ACADEMIC', key: 'Academic',
       children: [
-        { label: 'Admissions', key: 'Addmissions', 
-          children: [
-            { label: 'Greetings from Mayur', key: 'greetingsFromMayur' },
-            { label: 'Admission Procedure', key: 'admissionProcedure' },
-            { label: 'Online Registration', key: 'onlineRegistration' },
-          ]
-        },
-        { label: 'Fee Structure', key: 'feeStructure' },
-        { label: 'Uniform', key: 'uniform' },
-        { label: 'Affiliation', key: 'affiliation' },
-        { label: 'School Rules', key: 'schoolRules' },
-        { label: 'Sports / Activities', key: 'aportsActivities' },
+        // { label: 'Admissions', key: 'Addmissions', 
+        //   children: [
+        //     { label: 'Greetings from Mayur', key: 'greetingsFromMayur' },
+        //     { label: 'Admission Procedure', key: 'admissionProcedure' },
+        //     { label: 'Online Registration', key: 'onlineRegistration' },
+        //   ]
+        // },
+        { label: <Link to={"fee-structure"}>Fee Structure</Link>, key: 'feeStructure' },
+        // { label: 'Uniform', key: 'uniform' },
+        { label: <Link to={"affiliation"}>Affiliation</Link> , key: 'affiliation' },
+        { label: <Link to={"school-rules"}>School Rules</Link>, key: 'schoolRules' },
+        { label: <Link to={"sports-activities"}>Sports / Activities</Link>, key: 'aportsActivities' },
       ]
     },
     {
       label: 'INFRASTRUCTURE', key: 'infrastructure',
       children: [
-        // { label: <Link to={"/laboratories"}>Laboratories</Link>, key: 'laboratories' },
-        { label: <Link to={"/digitalClassRooms"}>Digital Class Rooms </Link>, key: 'digitalClassRooms' },
-        // { label: <Link to={"/library"}>Library </Link>, key: 'library' },
+        // { label: <Link to={"/digitalClassRooms"}>Digital Class Rooms </Link>, key: 'digitalClassRooms' },
         { label: <Link to={"/transportation"}>Transportation </Link>, key: 'transportation' },
         { label: <Link to={"/facilities"}>Facilities </Link>, key: 'facilities' },
       ]

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Form, Input, InputNumber } from 'antd';
 import CommonButton from '../components/common/CommonButton';
+import { FaPhoneVolume } from 'react-icons/fa';
+import { IoMail } from 'react-icons/io5';
 
 const layout = {
     labelCol: { span: 8 },
@@ -39,7 +41,7 @@ const ContactUs = () => {
                 allowfullscreen=""
             ></iframe>
 
-            <div className="container m-auto my-[70px] p-4 flex justify-center flex-col md:flex-row md:grid-cols-2 gap-x-10">
+            <div className="container m-auto my-[50px] p-4 flex justify-center flex-col md:flex-row md:grid-cols-2 gap-x-10">
                 <div className="w-full md:w-[65%]">
                     <div className="container m-auto">
                         <CommonButton title="CONTACT FORM" className="text-xl mb-10 Roboto-Bold" justify="start" />
@@ -72,10 +74,53 @@ const ContactUs = () => {
                     </Form>
                 </div>
                 <div className="w-full md:w-[30%]">
-                    <div className="container m-auto">
-                        <CommonButton title="OFFICE" className="text-xl mb-10 Roboto-Bold" justify="start" />
-                    </div >
-                    <p>9672987280 <span className="font-bold">(Nepal Singh Sankara)</span></p>
+                    <div>
+                        <div className="container m-auto">
+                            <CommonButton title="OFFICE" className="text-xl mb-5 Roboto-Bold" justify="start" />
+                        </div >
+                        <div className='flex gap-x-2 justify-start items-center'>
+                            <FaPhoneVolume />
+                            <p>9929298644 <span className="font-bold">(Rupkishor Nehra)</span></p>
+                        </div>
+                        <div className='flex gap-x-2 justify-start items-center mt-2'>
+                            <FaPhoneVolume />
+                            <p>9799435302 <span className="font-bold">(Jasraj Nehra)</span></p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="container m-auto">
+                            <CommonButton title="Fee Inquiry" className="text-xl my-5 Roboto-Bold" justify="start" />
+                        </div >
+                        <div className='flex gap-x-2 justify-start items-center'>
+                            <FaPhoneVolume />
+                            <p>9929298644 <span className="font-bold">(Rupkishor Nehra)</span></p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="container m-auto">
+                            <CommonButton title="Feedback / IT/ Complaint" className="text-xl my-5 Roboto-Bold" justify="start" />
+                        </div >
+                        <div className='flex gap-x-2 justify-start items-center'>
+                            <FaPhoneVolume />
+                            <p>9929298644 <span className="font-bold">(Rupkishor Nehra)</span></p>
+                        </div>
+                        <div className='flex gap-x-2 justify-start items-center mt-2'>
+                            <IoMail />
+                            <p>cv656@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="container m-auto">
+                            <CommonButton title="Head Master" className="text-xl my-5 Roboto-Bold" justify="start" />
+                        </div >
+                        <div className='flex gap-x-2 justify-start items-center'>
+                            <FaPhoneVolume />
+                            <p>9929298644 <span className="font-bold">(Rupkishor Nehra)</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
