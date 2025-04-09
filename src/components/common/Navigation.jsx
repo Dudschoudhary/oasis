@@ -88,7 +88,7 @@ const Navigation = () => {
     },
     { label: <Link to={"/results"}>RESULTS</Link>, key: 'results' },
     { label: <Link to={"/events"}>EVENTS</Link>, key: 'events' }, 
-    { label: <Link to={"/contactUs"}>CONTACT US</Link>, key: 'contactUs' }, 
+    { label: <Link to={"/contact-us"}>CONTACT US</Link>, key: 'contactUs' }, 
   ];
 
   return (

@@ -13,6 +13,7 @@ import Alumni from "../pages/allCards/Alumni";
 import Careers from "../pages/allCards/Careers";
 import AboutSchool from "../pages/about/AboutSchool";
 import DirectorMessage from "../pages/about/DirectorMessage";
+import ContactUs from "../pages/ContactUs";
 
 export const route = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ export const route = createBrowserRouter([
         {
           path: "director-message",
           element: <DirectorMessage/>
+        },
+        {
+          path: "contact-us",
+          element: <ContactUs/>
         },
     ]
   }
