@@ -4,11 +4,11 @@ import { MdEmail, MdWatchLater } from 'react-icons/md'
 
 const SubNavigation = () => {
   return (
-    <div className='bg-[#d7b56d] p-1'>
-      <div className=' flex justify-around items-center text-[#00434c]'>
+    <div className='bg-[#212529] p-4'>
+      <div className=' flex justify-around items-center text-[#fff]'>
         
         {/* Left side contact information */}
-        <div className='flex justify-center flex-wrap gap-x-10 Roboto_Condensed_SemiBold'>
+        <div className='flex justify-center flex-wrap gap-x-10 '>
           {/* Phone number - visible on lg and above screens */}
           <div className='flex justify-center items-center gap-x-2'>
             <FaPhone />
@@ -30,8 +30,8 @@ const SubNavigation = () => {
 
         {/* Social media icons */}
         <div className='hidden md:flex justify-center items-center gap-x-2 '>
-          <FaFacebookF className='bg-[#00434c] text-white p-1 text-[22px] rounded'/>
-          <FaYoutube className='bg-[#00434c] text-white p-1 text-[22px] rounded'/>
+          <FaFacebookF className='bg-[#ffff] text-[#212925] p-1 text-[22px] rounded'/>
+          <FaYoutube className='bg-[#ffff] text-[#212925] p-1 text-[22px] rounded'/>
         </div>
       </div>
     </div>

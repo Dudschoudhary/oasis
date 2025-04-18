@@ -91,9 +91,9 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="border-gray-200 sticky top-0 z-50 Roboto-Bold">
-        <div className="bg-[#00434c] py-5 ">
-          <div className="flex items-center justify-between lg:justify-around text-xl lg:text-5xl">
+      <nav className="border-gray-200 sticky top-0 z-50">
+        <div className="bg-[#EAEAEA] py-5 shadow-[1px_2px_6px_1px_#ccc] SourceSans3-Bold">
+          <div className="flex items-center justify-between lg:justify-around text-xl lg:text-5xl ">
             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse w-20">
               {/* <h2 className='text-white '>Duds</h2> */}
               <img src={logoImage} alt="Oasis Logo"  className='ms-10'/>
@@ -128,7 +128,7 @@ const Navigation = () => {
               onClick={handleMenuClick}
               items={menuItems}
               style={{ minWidth: 0, flex: "auto" }}
-              className="md:!flex !hidden bg-[#494f5d] hover:text-white Roboto-Bold"
+              className="md:!flex !hidden bg-[#494f5d] hover:text-white"
             />
 
           </div>
@@ -141,8 +141,8 @@ const Navigation = () => {
           open={drawerVisible}
           width={250}
           classNames={{
-            body: "bg-[#00434c]",
-            header: "bg-[#00434c]",
+            body: "bg-[#9f004f]",
+            header: "bg-[#9f004f]",
           }}
           title={
             <div className="flex justify-end items-center">

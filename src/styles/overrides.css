@@ -3,7 +3,7 @@
 }
 .ant-menu-dark .ant-menu-submenu-selected .ant-menu-submenu-title,
 .ant-menu-light .ant-menu-submenu-selected .ant-menu-submenu-title {
-    color: white !important;
+    color: black !important;
 }
 .css-dev-only-do-not-override-nqoqt9.ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
     border-radius: 10px 0 10px 0;
@@ -21,8 +21,9 @@
     background-color: none;
 }
 .ant-menu-dark .ant-menu-item a, .ant-menu-title-content{
-    color: #fff;
+    color: #252222;
     font-size: 16px;
+    font-weight: 400;
     padding-right: 10px;
 
 }
@@ -46,19 +47,19 @@
     background:none;
 }
 .ant-menu-dark.ant-menu .ant-menu-item-selected, .ant-menu-dark.ant-menu .ant-menu-item-selected:hover{
-    background-color:#00434c;
+    /* background-color:#9f004f; */
     color: #fff;
 }
 .ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline{
-    background-color:#00434c;  /* pending */
+    background-color:#9f004f;  /* pending */
 }
 .ant-table-cell{
     /* text-align: center !important; */
 }
 .ant-btn-variant-solid{
-    background-color: #00434c;
+    background-color: #9f004f;
     padding: 20px 20px;
 }
 .ant-menu-dark.ant-menu-horizontal .ant-menu-submenu-selected, .ant-menu-dark.ant-menu-horizontal .ant-menu-submenu-selected:hover{
-    background-color: #00434c;
+    background-color: #9f004f;
 }

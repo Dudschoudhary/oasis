@@ -63,7 +63,7 @@ const AdvancedSearchForm = () => {
                     </Row>
                     <div style={{ textAlign: 'center' }}>
                         <Space size="small">
-                            <Button type="primary" htmlType="submit" className='bg-[#00434c]'>
+                            <Button type="primary" htmlType="submit" className='bg-[#9f004f]'>
                                 Submit
                             </Button>
                         </Space>
