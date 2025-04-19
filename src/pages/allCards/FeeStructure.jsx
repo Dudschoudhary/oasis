@@ -81,7 +81,7 @@ const FeeStructure = () => {
         <CommonCardHeadingSection title="Fee Structure" />
       </div>
       <div className='container m-auto p-4'>
-        <CommonButton title="Fee Structure 2025-26" className="text-xl md:text-3xl mb-10 Roboto-Bold" justify="center" />
+        <CommonButton title="Fee Structure 2025-26" className="text-xl md:text-2xl mb-10 Roboto-Bold" justify="center" />
         
         <Table 
           columns={columns} 

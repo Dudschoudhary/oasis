@@ -11,7 +11,7 @@ const AboutSchool = () => {
         <CommonCardHeadingSection title="Our School" />
       </div>
       <div className='container m-auto p-4'>
-        <CommonButton title="OASIS STAR ACADEMY SEC. SCHOOL, BISARNIYA (DHANOU)" className="text-xl md:text-3xl mb-10 Roboto-Bold" justify="start" />
+        <CommonButton title="OASIS STAR ACADEMY SEC. SCHOOL, BISARNIYA (DHANOU)" className="text-xl md:text-2xl mb-10 Roboto-Bold" justify="start" />
       </div >
       <div className='flex container m-auto p-4 gap-x-10 mb-9 flex-col md:flex-row'>
         <div className='md:w-[40%]'>

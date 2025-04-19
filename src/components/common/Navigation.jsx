@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import { Drawer, Menu } from 'antd';
-import { FiLayers } from 'react-icons/fi';
 import { CiMenuBurger } from 'react-icons/ci';
 import { MdOutlineClose, MdOutlineDashboardCustomize } from 'react-icons/md';
 import { AiOutlineLogout } from 'react-icons/ai';
 import { TbArrowsExchange, TbReportSearch } from 'react-icons/tb';
 import { FaRegUser } from 'react-icons/fa';
-import { GoTasklist } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import logoImage from '../../../src/assets/images/oasis2.png'
 
@@ -92,11 +90,11 @@ const Navigation = () => {
   return (
     <>
       <nav className="border-gray-200 sticky top-0 z-50">
-        <div className="bg-[#EAEAEA] py-5 shadow-[1px_2px_6px_1px_#ccc] SourceSans3-Bold">
+        <div className="bg-[#eaeaea] py-5 shadow-[1px_2px_6px_1px_#ccc] SourceSans3-Bold">
           <div className="flex items-center justify-between lg:justify-around text-xl lg:text-5xl ">
             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse w-20">
               {/* <h2 className='text-white '>Duds</h2> */}
-              <img src={logoImage} alt="Oasis Logo"  className='ms-10'/>
+              <img src={logoImage} alt="Oasis Logo"  className='ms-10' />
               
             </a>
 
@@ -116,9 +114,9 @@ const Navigation = () => {
                 aria-expanded={drawerVisible ? 'true' : 'false'}
               >
                 {drawerVisible ? (
-                  <MdOutlineClose className="text-[#c8cace] w-5 h-5" />
+                  <MdOutlineClose className="text-[#252222] w-5 h-5" />
                 ) : (
-                  <CiMenuBurger className="text-[#c8cace] w-5 h-5" />
+                  <CiMenuBurger className="text-[#252222] w-5 h-5" />
                 )}
               </button>
             </div>
@@ -139,10 +137,10 @@ const Navigation = () => {
           placement="left"
           onClose={closeDrawer}
           open={drawerVisible}
-          width={250}
+          width={300}
           classNames={{
-            body: "bg-[#9f004f]",
-            header: "bg-[#9f004f]",
+            body: "bg-[#fff]",
+            header: "bg-[#fff]",
           }}
           title={
             <div className="flex justify-end items-center">

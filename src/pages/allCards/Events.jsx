@@ -11,7 +11,7 @@ const Events = () => {
                     <CommonCardHeadingSection title="Events" />
                 </div>
                 <div className='container m-auto px-4'>
-                    <CommonButton title=" ANNUAL FUNCTION (2025)" className="text-xl md:text-3xl capitalize Roboto-Bold px-4" />
+                    <CommonButton title=" ANNUAL FUNCTION (2025)" className="text-xl md:text-2xl capitalize Roboto-Bold px-4" />
                     <div className='px-4'>
                         <ul className='gap-y-2'>
                             <li className='list-disc'> Chif Guest - Dr. Ruma Deve (indian traditional handicraft fashion designer and social worker from Barmer, Rajasthan) </li>

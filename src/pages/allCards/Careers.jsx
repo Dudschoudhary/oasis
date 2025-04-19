@@ -9,7 +9,7 @@ const Careers = () => {
                 <CommonCardHeadingSection title="Careers" />
             </div>
             <div className='container m-auto p-4 py-[70px]'>
-                <CommonButton title="Teachers Required for Now not Available" className="text-xl md:text-3xl capitalize Roboto-Bold" />
+                <CommonButton title="Teachers Required for Now not Available" className="text-xl md:text-2xl capitalize Roboto-Bold" />
                 <div>
                     <ul>
                         <li className='my-2'><span className='font-bold'>Contact: </span>9929298644</li>

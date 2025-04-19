@@ -56,7 +56,7 @@ const Transportation = () => {
                 />
             </div>
             <div className='container m-auto p-4 my-[70px]'>
-                <CommonButton title="For more queries" className="text-xl md:text-3xl mb-5 Roboto-Bold px-4" justify="start" />
+                <CommonButton title="For more queries" className="text-xl md:text-2xl mb-5 Roboto-Bold px-4" justify="start" />
 
                 <div className='px-4 my-5'>
                     <ul>

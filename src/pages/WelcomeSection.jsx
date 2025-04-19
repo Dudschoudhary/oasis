@@ -11,7 +11,7 @@ const WelcomeSection = () => {
             <img src={schoolStudents} alt="school students Image " className='rounded' data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"  data-aos-duration="2000"/>
          </div>
          <div className='w-full md:w-[50%] p-4'data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000" >
-            <CommonButton title="Welcome to Oasis Star Academy" className=" font-bold text-xl md:text-3xl" justify="center"/>
+            <CommonButton title="Welcome to Oasis Star Academy" className=" font-bold text-xl md:text-2xl" justify="center"/>
             <CommonButton title="DISCIPLINE-CHARACTER-PROGRESS" className=" font-medium md:text-xl" justify="center" />
              <p className='text-md Roboto-Light'>
              We at Oasis, endeavor to send our students back to their homes everyday, better than they were yesterday. Improvement is our promise to ourselves. We are here not to market our infrastructure, facilities menu and fake promises, but to build your children strong by inculcating in them discipline, character,  education, morals, purpose, goal and thus pushing them towards progress EVERYDAY.

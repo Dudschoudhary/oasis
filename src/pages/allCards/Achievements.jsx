@@ -65,7 +65,7 @@ const Achievements = () => {
                     <CommonCardHeadingSection title="Achievements" />
                 </div>
                 <div className='container m-auto p-4 my-[70px]'>
-                    <CommonButton title="NEET" className="text-xl md:text-3xl mb-10 Roboto-Bold px-4" justify="start" />
+                    <CommonButton title="NEET" className="text-xl md:text-2xl mb-10 Roboto-Bold px-4" justify="start" />
                     <hr className='py-4 w-[150px]' />
 
                     <Table
@@ -77,7 +77,7 @@ const Achievements = () => {
                     />
                 </div>
                 <div className='container m-auto p-4'>
-                    <CommonButton title="navodaya vidyalaya" className="text-xl md:text-3xl mb-10 Roboto-Bold uppercase px-4" justify="start" />
+                    <CommonButton title="navodaya vidyalaya" className="text-xl md:text-2xl mb-10 Roboto-Bold uppercase px-4" justify="start" />
                     <hr className='py-4 w-[150px]' />
 
                     <Table

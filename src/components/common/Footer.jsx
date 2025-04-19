@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImage from '../../../src/assets/images/oasis2.png'
+import logoImage from '../../../src/assets/images/oasis.png'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { FaLocationDot } from 'react-icons/fa6'

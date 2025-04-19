@@ -16,7 +16,7 @@ const Admission = () => {
                 </div>
             </div>
             <div className='container m-auto p-4 '>
-                <CommonButton title="minimus age" className="text-xl md:text-3xl capitalize Roboto-Bold" />
+                <CommonButton title="minimus age" className="text-xl md:text-2xl capitalize Roboto-Bold" />
                 <div className='px-4'>
                     <ul>
                         <li className='list-disc'>Minimum age (L.K.G.) – 3 to  4  years</li>
@@ -25,7 +25,7 @@ const Admission = () => {
             </div>
 
             <div className='container m-auto px-4'>
-                <CommonButton title="Admission Time" className="text-xl md:text-3xl capitalize Roboto-Bold" />
+                <CommonButton title="Admission Time" className="text-xl md:text-2xl capitalize Roboto-Bold" />
                 <div className='px-4'>
                     <ul className='gap-y-2'>
                         <li className='list-disc'>L.K.G. to 10<sup className='mr-1'>th </sup> 1<sup className='mr-1'>st</sup> May of every year </li>
@@ -34,7 +34,7 @@ const Admission = () => {
             </div>
 
             <div className='container m-auto p-4'>
-                <CommonButton title="Documents required at the time of admission" className="text-xl md:text-3xl Roboto-Bold" justify="start" />
+                <CommonButton title="Documents required at the time of admission" className="text-xl md:text-2xl Roboto-Bold" justify="start" />
                 <div className='px-4'>
                     <ul className='gap-y-2'>
                         <li className='list-disc'>L.K.G. – Passport size photo, Birth Certificate</li>
