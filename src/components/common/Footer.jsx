@@ -34,9 +34,14 @@ const Footer = () => {
         </div>
         <div className='bg-[#9f004f] h-[60px] w-full flex flex-col md:flex-row justify-around items-center text-white text-[14px]'>
           <div className='ms-10 sm:ms-5'>Copyright © 2025 Oasis Start Academy</div>
-          <div className='ms-10 sm:ms-5'>Website By: DudsTech</div>
+          <div className='ms-10 sm:ms-5'>
+            <a href="https://wa.me/9587449072">
+              Website By: DudsTech
+            </a>
+          </div>
+
         </div>
-      </div>
+      </div >
     </>
   )
 }

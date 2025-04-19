@@ -20,7 +20,7 @@ const AboutSchool = () => {
             <span className='font-bold'>यात्रा वृतांत – </span>मयूर नोबल्स एकेडमी दैविक शक्तियों की अनुकम्पा, प्रधानाचार्य श्री मिश्रीदान चारण की समर्पित टीम एवं प्रतिभाशाली विद्यार्थियों की ज्ञान पिपासा प्रवृति के कारण दिन-दूनी रात-चौगुनी प्रगति करता हुआ निरन्तर अपने ध्येय की ओर अग्रसर है।</p>
         </div>
         <div className='md:w-[55%] mt-10 md:mt-0'>
-            <img src={aboutSchoolImage} alt="About School Image" className='w-[500px]' />
+            <img src={aboutSchoolImage} alt="About School Image" className='w-[500px]' data-aos="flip-up" data-aos-easing="ease-out-cubic"  data-aos-duration="2000"/>
         </div>
       </div>
     </div>

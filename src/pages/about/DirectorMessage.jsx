@@ -30,7 +30,7 @@ const DirectorMessage = () => {
                         </p>
                     </div>
                     <div className='md:w-[55%] mt-10 md:mt-0'>
-                        <img src={DirectorImage} alt="Director image" className='w-[500px]' />
+                        <img src={DirectorImage} alt="Director image" className='w-[500px]' data-aos="flip-down" data-aos-easing="ease-out-cubic"  data-aos-duration="2000" />
                     </div>
                 </div>
             </div >

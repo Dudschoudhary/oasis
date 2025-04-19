@@ -23,21 +23,25 @@ const Events = () => {
                                 src={eventsImage}
                                 alt="events Image"
                                 className='rounded transform transition duration-500 shadow-lg hover:scale-105 hover:shadow-2xl'
+                                data-aos="zoom-in-right" data-aos-easing="ease-out-cubic"  data-aos-duration="2000"
                             />
                             <img
                                 src={eventsImage}
                                 alt="events Image"
                                 className='rounded transform transition duration-500 shadow-lg hover:scale-105 hover:shadow-2xl'
+                                data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"  data-aos-duration="2000"
                             />
                             <img
                                 src={eventsImage}
                                 alt="events Image"
                                 className='rounded transform transition duration-500 shadow-lg hover:scale-105 hover:shadow-2xl'
+                                data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"  data-aos-duration="2000"
                             />
                             <img
                                 src={eventsImage}
                                 alt="events Image"
                                 className='rounded transform transition duration-500 shadow-lg hover:scale-105 hover:shadow-2xl'
+                                data-aos="zoom-in-left" data-aos-easing="ease-out-cubic"  data-aos-duration="2000"
                             />
                         </div>
                     </div>
